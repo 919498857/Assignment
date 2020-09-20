@@ -16,10 +16,10 @@ public class LevelGenerator.cs : MonoBehaviour
     public GameObject normalpellet;
     public GameObject emergypellet;
     public GameObject life;
-    public GameObject M1;
-    public GameObject M2;
-    public GameObject M3;
-    public GameObject M4;
+    public GameObject G1;
+    public GameObject G2;
+    public GameObject G3;
+    public GameObject G4;
     public GameObject Hero;
     public GameObject chery;
 
@@ -44,15 +44,40 @@ public class LevelGenerator.cs : MonoBehaviour
      {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
      {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
      };
-    Instantiate(life, new Vector2(28,-10)),Quaternion,identity).transform.Rotate(0,0,90);
-Instantiate(life, new Vector2(28, -3)),Quaternion,identity).transform.Rotate(0, 0, 90);
-Instantiate(life, new Vector2(28, 10)),Quaternion,identity).transform.Rotate(0, 0, 90);
-Instantiate(M1, new Vector2(10,12)),Quaternion,identity).transform.Rotate(0, 0, 90);
-Instantiate(M2, new Vector2(12, 12)),Quaternion,identity).transform.Rotate(0, 0, 90);
-Instantiate(M3, new Vector2(14, 12)),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(life, new Vector2(28,-10),Quaternion,identity).transform.Rotate(0,0,90);
+    Instantiate(life, new Vector2(28, -3),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(life, new Vector2(28, 10),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(G1, new Vector2(10,16),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(G2, new Vector2(10, 12),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(G3, new Vector2(16, 12),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(G4, new Vector2(16, 16),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(Hero, new Vector2(18, 22),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(chery, new Vector2(18, 15),Quaternion,identity).transform.Rotate(0, 0, 90);
+    Instantiate(chery, new Vector2(18, 17),Quaternion,identity).transform.Rotate(0, 0, 90);
 
+       for (int i = 0; i<LevelGenerator(0); i++) {
 
+            for (int j = 0; j < LevelGenerator(1); j++){
+                Case 1:
+                    if(i==9 && j ==0){
+                    Instantiate(outsidecorner, new Vector2(i, j),Quaternion,identity).transform.Rotate(0, 0, 90);
+                    break;            
+                    }
+                    else if (i == 9 && j == 6) {
+                    Instantiate(outsidecorner, new Vector2(i, j),Quaternion,identity).transform.Rotate(0, 0, -90);
+                        break;
 }
+                else if (i == 9 && j == 6)
+                {
+                Instantiate(outsidecorner, new Vector2(i, j), Quaternion, identity).transform.Rotate(0, 0, -180);
+                break;
+}
+                    }
+            }
+
+    
+
+
 
 // Update is called once per frame
 void Update()
@@ -60,3 +85,4 @@ void Update()
         
     }
 }
+
