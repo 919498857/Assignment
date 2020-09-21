@@ -61,45 +61,45 @@ public class LevelGenerator : MonoBehaviour
                     case 1:
                         if (i == 9 && i == 0)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
                             break;
                         }
                         else if (i == 9 && i == 5)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, -90);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, -90);
                             break;
                         }
                         else if (i == 13 && i == 5)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, -180);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, -180);
                             break;
                         }
                         else
                         {
 
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity);
                             break;
                         }
                     case 2:
                         if (i == 0)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity);
                             break;
                         }
                         else if (i < 9)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
                             break;
                         }
                         else if (i >= 10 & i < 13)
                         {
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity).transform.Rotate(0, 0, 90);
                             break;
                         }
                         else
                         {
 
-                            Instantiate(outsidecorner, new Vector2(i, j), Quaternion.identity);
+                            Instantiate(insidecorner, new Vector2(i, j), Quaternion.identity);
                             break;
                         }
                     case 3:

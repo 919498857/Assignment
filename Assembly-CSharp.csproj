@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Audio.cs" />
     <Compile Include="Assets\Script\LevelGenerator.cs" />
+    <Compile Include="Assets\Script\Move.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Administrator/Desktop/Assignment/Assignment/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
