@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 6fd652055ef94b34d819ec71aea237c9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1322821052197086858
+    second: P1_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +87,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: P1_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 69
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5562587, y: 0.53750867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86ad950dba9b5210800000000000000
+      internalID: 1322821052197086858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

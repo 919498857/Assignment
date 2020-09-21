@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Remoting.Lifetime;
 using System.Security.Principal;
 using UnityEngine;
 
-public class LevelGenerator.cs : MonoBehaviour
+public class LevelGenerator : MonoBehaviour
 {
     public int a;
     public int b;
@@ -26,8 +25,8 @@ public class LevelGenerator.cs : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    int[,] levelMap =
-    {
+        int[,] levelMap =
+        {
      {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
      {2,5,5,5,5,5,5,5,5,5,5,5,5,4},
      {2,5,3,4,4,3,5,3,4,4,4,3,5,4},
@@ -44,38 +43,31 @@ public class LevelGenerator.cs : MonoBehaviour
      {2,2,2,2,2,1,5,3,3,0,4,0,0,0},
      {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
      };
-    Instantiate(life, new Vector2(28,-10),Quaternion,identity).transform.Rotate(0,0,90);
-    Instantiate(life, new Vector2(28, -3),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(life, new Vector2(28, 10),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(G1, new Vector2(10,16),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(G2, new Vector2(10, 12),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(G3, new Vector2(16, 12),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(G4, new Vector2(16, 16),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(Hero, new Vector2(18, 22),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(chery, new Vector2(18, 15),Quaternion,identity).transform.Rotate(0, 0, 90);
-    Instantiate(chery, new Vector2(18, 17),Quaternion,identity).transform.Rotate(0, 0, 90);
+        Instantiate(life, new Vector2(28, -10), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(life, new Vector2(28, -3), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(life, new Vector2(28, 10), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(G1, new Vector2(10, 16), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(G2, new Vector2(10, 12), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(G3, new Vector2(16, 12), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(G4, new Vector2(16, 16), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(Hero, new Vector2(18, 22), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(chery, new Vector2(18, 15), Quaternion.identity).transform.Rotate(0, 0, 90);
+        Instantiate(chery, new Vector2(18, 17), Quaternion.identity).transform.Rotate(0, 0, 90);
 
-       for (int i = 0; i<LevelGenerator(0); i++) {
+        for (int i = 0; i < levelMap.GetLength(0); i++)
+        {
 
-            for (int j = 0; j < LevelGenerator(1); j++){
-                Case 1:
-                    if(i==9 && j ==0){
-                    Instantiate(outsidecorner, new Vector2(i, j),Quaternion,identity).transform.Rotate(0, 0, 90);
-                    break;            
-                    }
-                    else if (i == 9 && j == 6) {
-                    Instantiate(outsidecorner, new Vector2(i, j),Quaternion,identity).transform.Rotate(0, 0, -90);
-                        break;
-}
-                else if (i == 9 && j == 6)
+            for (int j = 0; j < levelMap.GetLength(1); j++)
+            {
+                switch (levelMap[i, j])
                 {
-                Instantiate(outsidecorner, new Vector2(i, j), Quaternion, identity).transform.Rotate(0, 0, -180);
-                break;
-}
-                    }
+                   // case 1:
+                    
+                }
             }
+        }
 
-    
+    }
 
 
 
